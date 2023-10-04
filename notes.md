@@ -22,3 +22,5 @@
 
 1 semana = 7 dias
 1248 semanas = 8 736 dias
+
+link to learn data object: https://www.tutorialspoint.com/javascript/javascript_date_object.htm
