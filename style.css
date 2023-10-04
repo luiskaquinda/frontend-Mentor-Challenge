@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+hr {
+    background-color: #FFFFFF;
+    opacity: .3;
+    width: 100%;
+}
+
+input:focus {
+    outline: 1px solid #844CFF;
+}
+
+.container {
+    background-color: #F2F2F2;
+}
+
+.container, 
+form, 
+.years-months-days, 
+.content, .submit, form > div {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+form > div {
+    width: 80%;
+    min-width: 320px;
+}
+
+.years-months-days {
+    flex-direction: column;
+}
+
+.container {
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+form > .day, 
+form > .month, 
+form > .year {
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+form .day > label
+, form .month > label
+, form .year > label
+ {
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+    font-size: 12px;
+    font-weight: 700;
+
+    color: #6b6b6b;
+
+    margin-right: 4px;
+    margin-bottom: 4px;
+}
+
+form  .day input, 
+form  .month input, 
+form  .year input {
+    
+    padding: 8px 18px;
+    width: 50%;
+
+    color: black;
+    font-weight: 800;
+
+    border: 0.2px solid #949494;
+    border-radius: 6px;
+
+    margin-right: 4px;
+    
+    display: flex;
+    font-size: 18px;
+}
+
+form .day,
+form .year,
+form .month {
+    flex: 1 0 75px;
+}
+
+.content {
+    justify-content: flex-start;
+
+    width: auto;
+    max-width: 432px;
+    height: auto;
+    background-color: #ffffff;
+    padding: 24px;
+
+    border-radius: 24px 24px 100px 24px;
+    margin: 0 12%;
+}
+
+.divisor-line {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.divisor-line {
+    border-radius: 100%;
+    background-color: #844CFF;
+    
+    background-image: url('assets/images/icon-arrow.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+
+    padding: 20px 28px;
+    border: none;
+}
+
+.divisor-line:hover {
+    cursor: pointer;
+    background-color: #000000;
+}
+
+.divisor-line input {
+    width: 100vw;
+}
+
+.submit {
+    position: relative;
+    flex: 1 0 100%;
+    margin-top: 38px;
+    margin-bottom: 42px;
+}
+
+.submit input {
+    position: absolute;
+    left: 100%;
+    transform: translate(-100%, -50%);
+}
+
+.years-months-days > .years, 
+.years-months-days > .months, 
+.years-months-days > .days {
+    font-size: 40px;
+    font-weight: 800;
+    font-style: italic;
+}
+
+.years-months-days > .years .number, 
+.years-months-days > .months .number, 
+.years-months-days > .days .number {
+    color: #874DF7;
+}
+
+form {
+    column-gap: 12px;
+}
+
+@media (max-width: 425px) {
+    hr {
+        width: 94%;
+    }
+    
+    .content {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .submit input {
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    form, .years-months-days {
+        padding-left: 14px;
+    }
+
+    form > div {
+        min-width: 247px;
+    }
+}
